@@ -16,6 +16,6 @@
 
 ----- 
 
-### Introduction
+### 📝 Introduction
 
 Face and photograph augmentation are a form of  expression, communication and entertainment. Applying a mask on one’s face is surprising and fun and may also be considered artistic. We present a technique to make any photographed or animated face into a mask and an automated algorithm to apply masks on top of faces. To complete the resulting image, it is possible to apply gradual blur and vignetting and change the color temperature of the photograph.
