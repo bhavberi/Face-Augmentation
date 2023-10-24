@@ -37,7 +37,7 @@ def gradient_blur(img):
 # %%
 imgs = [cv2.imread(f'{images_base_path}/{i}.jpg') for i in range(1, 4)]
 blurred_imgs = [gradient_blur(img) for img in imgs]
-os.makedirs('{save_base_path}/gradient_blur', exist_ok=True)
+os.makedirs(f'{save_base_path}/gradient_blur', exist_ok=True)
 for i, img in enumerate(blurred_imgs):
     cv2.imwrite(f'{save_base_path}/gradient_blur/{i+1}.jpg', img)
 
@@ -62,7 +62,7 @@ def vignetting(img, d=1.0):
 # %%
 imgs = [cv2.imread(f'{images_base_path}/{i}.jpg') for i in range(1, 4)]
 blurred_imgs = [vignetting(img) for img in imgs]
-os.makedirs('{save_base_path}/vignette', exist_ok=True)
+os.makedirs(f'{save_base_path}/vignette', exist_ok=True)
 for i, img in enumerate(blurred_imgs):
     cv2.imwrite(f'{save_base_path}/vignette/{i+1}.jpg', img)
 
@@ -136,7 +136,7 @@ def change_color_temperature(img, temperature, alpha=0.5):
 # %%
 imgs = [cv2.imread(f'{images_base_path}/{i}.jpg') for i in range(1, 4)]
 blurred_imgs = [change_color_temperature(img, 10000) for img in imgs]
-os.makedirs('{save_base_path}/color_temperature', exist_ok=True)
+os.makedirs(f'{save_base_path}/color_temperature', exist_ok=True)
 for i, img in enumerate(blurred_imgs):
     cv2.imwrite(f'{save_base_path}/color_temperature/{i+1}.jpg', img)
 
