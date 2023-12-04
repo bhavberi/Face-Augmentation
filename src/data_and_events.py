@@ -7,10 +7,10 @@ import numpy as np
 class data_and_events:
     drawing_status = Enum("drawing_status", ["NONE", "DRAWING", "DONE", "FGBRUSH", "BGBRUSH"])
 
-    def __init__(self, image_name) -> None:
+    def __init__(self, image_path) -> None:
         self.start_point = (-1, -1)
         self.end_point = (-1, -1)
-        path = os.path.join(os.getcwd(), "..", "img", image_name)
+        path = image_path
         img = cv.imread(path)
         self.drawing = self.drawing_status.NONE
         self.img = copy(img)
